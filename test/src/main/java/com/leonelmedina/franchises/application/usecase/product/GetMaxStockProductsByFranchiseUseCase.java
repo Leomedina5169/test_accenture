@@ -1,5 +1,7 @@
 package com.leonelmedina.franchises.application.usecase.product;
 
+import org.springframework.stereotype.Service;
+
 import com.leonelmedina.franchises.domain.exception.ErrorCode;
 import com.leonelmedina.franchises.domain.exception.ResourceNotFoundException;
 import com.leonelmedina.franchises.domain.model.BranchMaxStockProduct;
@@ -9,6 +11,7 @@ import com.leonelmedina.franchises.domain.port.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import reactor.core.publisher.Flux;
 
+@Service
 @RequiredArgsConstructor
 public class GetMaxStockProductsByFranchiseUseCase {
 

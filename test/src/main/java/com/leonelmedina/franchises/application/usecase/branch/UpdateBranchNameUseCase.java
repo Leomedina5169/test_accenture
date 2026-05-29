@@ -1,5 +1,7 @@
 package com.leonelmedina.franchises.application.usecase.branch;
 
+import org.springframework.stereotype.Service;
+
 import com.leonelmedina.franchises.domain.exception.ErrorCode;
 import com.leonelmedina.franchises.domain.exception.ResourceNotFoundException;
 import com.leonelmedina.franchises.domain.model.Branch;
@@ -8,6 +10,7 @@ import com.leonelmedina.franchises.domain.port.BranchRepository;
 import lombok.RequiredArgsConstructor;
 import reactor.core.publisher.Mono;
 
+@Service
 @RequiredArgsConstructor
 public class UpdateBranchNameUseCase {
 

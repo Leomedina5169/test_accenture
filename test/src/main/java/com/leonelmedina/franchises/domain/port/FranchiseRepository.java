@@ -2,9 +2,12 @@ package com.leonelmedina.franchises.domain.port;
 
 import com.leonelmedina.franchises.domain.model.Franchise;
 
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 public interface FranchiseRepository {
+
+	Flux<Franchise> findAll();
 
 	Mono<Franchise> save(Franchise franchise);
 

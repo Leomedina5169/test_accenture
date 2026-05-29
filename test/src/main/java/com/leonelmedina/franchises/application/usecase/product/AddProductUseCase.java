@@ -1,5 +1,7 @@
 package com.leonelmedina.franchises.application.usecase.product;
 
+import org.springframework.stereotype.Service;
+
 import com.leonelmedina.franchises.domain.exception.BusinessException;
 import com.leonelmedina.franchises.domain.exception.ErrorCode;
 import com.leonelmedina.franchises.domain.exception.ResourceNotFoundException;
@@ -10,6 +12,7 @@ import com.leonelmedina.franchises.domain.port.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import reactor.core.publisher.Mono;
 
+@Service
 @RequiredArgsConstructor
 public class AddProductUseCase {
 
